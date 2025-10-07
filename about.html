@@ -1,0 +1,202 @@
+<!-- About Page for Digital Marketer
+     Standalone about page. Replace image src, links, and text as needed.
+     Responsive and modern layout in English.
+-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About — Yasir Rahim</title>
+
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#00b894;
+      --muted:#9aa4b2;
+      --glass: rgba(255,255,255,0.03);
+      font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#08101a);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:28px auto;padding:22px}
+    .card{background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.85));border-radius:14px;padding:20px;backdrop-filter: blur(6px);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+
+    .top{display:flex;gap:20px;align-items:center}
+    .avatar{flex:0 0 160px;height:160px;border-radius:12px;overflow:hidden;border:4px solid rgba(255,255,255,0.04)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    .headings{flex:1}
+    h1{margin:0;font-size:26px}
+    .role{margin-top:6px;color:var(--accent);font-weight:700}
+    .location{margin-top:8px;color:var(--muted);font-size:14px}
+
+    .actions{margin-top:14px;display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:inherit;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#032117;border:none}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    .section{background:var(--glass);padding:16px;border-radius:12px}
+    .section h3{margin:0 0 10px 0}
+
+    ul.skills{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:8px}
+    ul.skills li{background:rgba(255,255,255,0.03);padding:8px 10px;border-radius:8px;font-size:14px}
+
+    .meta p{margin:8px 0;color:var(--muted)}
+
+    .timeline{display:flex;flex-direction:column;gap:12px}
+    .job{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+    .job .title{font-weight:700}
+    .job .period{color:var(--muted);font-size:13px}
+
+    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+    .service{padding:10px;border-radius:8px;background:rgba(255,255,255,0.02)}
+
+    .social{display:flex;gap:10px;margin-top:10px}
+    .social a{display:inline-block;padding:8px 10px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:inherit;font-weight:600}
+
+    .contact-form{display:flex;flex-direction:column;gap:10px}
+    .contact-form input,.contact-form textarea{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+    .contact-form textarea{min-height:110px;resize:vertical}
+
+    @media (max-width:920px){
+      .grid{grid-template-columns:1fr}
+      .avatar{flex-basis:120px;height:120px}
+    }
+    @media (max-width:480px){
+      h1{font-size:20px}
+      .avatar{flex-basis:100px;height:100px}
+    }
+    #contact p strong a{
+        text-decoration: none;
+        color: #e6eef6;
+    }
+     #contact p strong a:hover{
+        color: rgb(134, 134, 239);
+     }
+     .btn:hover{
+      color: rgb(84, 80, 80);
+     }
+     .skills li:hover{
+      transform: translateY(-8px);
+     }
+      .service:hover{
+      transform: translateY(-8px);
+     }
+     .job:hover{
+      transform: translateY(-7px);
+     }
+     .social a:hover{
+      transform: translateY(-6px);
+      color: #9aa4b2;
+     }
+     .btn-primary:hover{
+      background-color: transparent;
+      color: aliceblue;
+     }
+  </style>
+
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="top">
+        <div class="avatar">
+          <img src="yasir-bai.png" alt="Profile Image">
+        </div>
+        <div class="headings">
+          <h1>Yasir Rahim — Digital Marketer</h1>
+          <div class="role">Social Media Management • SEO • Paid Advertising</div>
+          <div class="location">Gilgit-Baltistan, Pakistan • Available for Freelance / Contract Work</div>
+
+          <div class="actions">
+           <a class="btn btn-primary" href="https://wa.me/923555298692" target="_blank">Contact</a>
+
+            <a class="btn" target="_blank" href="index.html">View Portfolio</a>
+            <a class="btn" target="_blank" href="My cv.pdf" target="_blank">Full Resume (PDF)</a>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div>
+          <section class="section">
+            <h3>About Me</h3>
+            <p>I’m Yasir Rahim, a skilled digital marketer with a strong background in brand strategy, social media marketing, and performance-based advertising. My approach is data-driven — optimizing campaigns to increase ROI and strengthen brand presence.</p>
+          </section>
+
+          <section class="section" style="margin-top:14px">
+            <h3>Skills</h3>
+            <ul class="skills">
+              <li>Facebook & Instagram Ads</li>
+              <li>Google Ads (Search & Shopping)</li>
+              <li>SEO & On‑page Optimization</li>
+              <li>Content Strategy</li>
+              <li>Email Marketing & Automation</li>
+              <li>Analytics (Google Analytics, GA4)</li>
+              <li>Funnel Building & CRO</li>
+              <li>Copywriting</li>
+            </ul>
+          </section>
+
+          <section class="section" style="margin-top:14px">
+            <h3>Core Services</h3>
+            <div class="services">
+              <div class="service"><strong>Brand Strategy</strong><p class="meta">Positioning, target audience research, and content planning.</p></div>
+              <div class="service"><strong>Paid Ad Management</strong><p class="meta">Customized Facebook, Instagram, and Google campaigns.</p></div>
+              <div class="service"><strong>SEO</strong><p class="meta">Technical SEO, content optimization, and backlink strategies.</p></div>
+              <div class="service"><strong>Conversion Optimization</strong><p class="meta">Landing page testing and performance improvement tactics.</p></div>
+            </div>
+          </section>
+
+          <section class="section" style="margin-top:14px">
+            <h3>Experience</h3>
+            <div class="timeline">
+              <div class="job">
+                <div class="title">Senior Digital Marketer — Binary Hub</div>
+                <div class="period">Jan 2024 — Present</div>
+                <p class="meta">Improved brand visibility, boosted monthly leads by 220%, and reduced cost per lead by 35%.</p>
+              </div>
+
+              <div class="job">
+                <div class="title">Freelancer / Consultant</div>
+                <div class="period">Sep 2024 — Dec 2025</div>
+                <p class="meta">Provided social media campaigns, brand strategy, and SEO services for startups and small businesses.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section" style="margin-top:14px">
+            <h3>Education</h3>
+            <p class="meta">Intermediate  — Gilgit College — 2023</p>
+          </section>
+        </div>
+
+        <aside>
+          <div class="section">
+            <h3>Quick Profile</h3>
+            <p class="meta"><strong>Name:</strong> Yasir Rahim<br><strong>Profession:</strong> Digital Marketer<br><strong>Location:</strong> Gilgit-Baltistan<br><strong>Languages:</strong> English, Urdu</p>
+
+            <h3 style="margin-top:12px">Social</h3>
+            <div class="social">
+              <a href="https://www.linkedin.com/in/yasir-rahim-1b36b0371">LinkedIn</a>
+              
+              <a href="https://www.instagram.com/yasirrahimraja/?hl=en">Instagram</a>
+            </div>
+
+            <h3 style="margin-top:12px">Skill Levels</h3>
+            <p class="meta">SEO <strong>85%</strong><br>Paid Ads <strong>90%</strong><br>Content Strategy <strong>80%</strong></p>
+          </div>
+
+          <div class="section" style="margin-top:14px" id="contact">
+            <h3>Contact Me</h3>
+    
+            <p class="meta" style="margin-top:10px"> directly: <strong><a target="_blank" href="https://wa.me/923555878204">+92 355 5878204</a></strong></p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
